@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+	<dialog id="info">
+		<h2>Move the snake using the keyboard arrows.<br>Press <u>space</u> to start</h2>
+		<button onclick="document.getElementById('info').close()">Close this</button>
+	</dialog>
+	<header style="position: absolute; top: 5px; left: 5px">
+		<button style="font-size: 18px; padding: 4px 6px" onclick="document.getElementById('info').showModal()">Help</button>
+	</header>	
+	<main id="root"></main>
+</body>
+</html>
